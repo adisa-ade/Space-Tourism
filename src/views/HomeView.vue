@@ -2,16 +2,32 @@
     import Nav from "../components/Nav.vue"
 </script>
 <template>
-    <body class="h-screen scroll-smooth text-white">
+    <body class="min-h-screen scroll-smooth text-slate-300 font-mono pb-4">
     <Nav/>
+    <div class="flex flex-col md:flex-row md:text-left justify-evenly items-center text-center mt-5 md:mt-20 space-y-10 md:space-y-0">
+    <div class="p-4 md:p-0 md:w-2/5">
+        <h1 class="text-xl md:text-3xl">
+            SO, YOU WANT TO TRAVLE TO <span class="text-8xl text-white font-bold md:block">SPACE</span> 
+        </h1>
+        <p class="leading-8 font-serif md:leading-10 md:text-xl">Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we'll give you a truly out of this world experience
+        </p>      
+    </div>
+    <div class="w-72 h-72 bg-white rounded-full flex justify-center items-center animate-pulse explore">
+        <h1 class="text-5xl text-black">EXPLORE</h1>
+    </div>
+    </div>
     </body>
 </template>
 <style scoped>
-@media screen and (max-width: 767px) {
+  .explore{
+    box-shadow: 2px 2px 30px 20px rgb(198, 199, 184);           
+  }
+    @media screen and (max-width: 767px) {
   body{
     background-image: url('../assets/home/background-home-mobile.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
   }  
 }
 @media screen and (min-width:768px) and (max-width: 1023px) {
