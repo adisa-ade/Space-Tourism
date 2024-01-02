@@ -22,7 +22,7 @@
 <style scoped>
   .explore{
     box-shadow: 2px 2px 30px 20px rgb(198, 199, 184);
-    animation: pulse 15s infinite linear;           
+    animation: pulse 12s infinite linear;           
   }
   @keyframes pulse {
     0%{
