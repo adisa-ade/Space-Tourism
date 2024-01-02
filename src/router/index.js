@@ -16,9 +16,9 @@ const router = createRouter({
         component: Destination
     },
     {
-        path:'/crew/',    
+        path:'/crew/:name',    
         name: 'crew',
-        component: Crew
+        component: Crew,        
     },
     {
         path:'/technology',    

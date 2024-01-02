@@ -44,12 +44,12 @@ watch(() => route.params.name, updateDestination)
 onMounted(updateDestination)
 </script>
 <template>  
-    <body class="min-h-screen scroll-smooth text-slate-300 font-mono pb-4 z-0">
+    <body class="min-h-screen scroll-smooth text-slate-300 font-mono pb-4">
         <Nav/>           
-        <div class="flex flex-col md:flex-row md:justify-between md:items-center p-4 md:p-8 z-0">          
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center p-4 md:p-8 z-0 ani">          
           <div class="flex flex-col items-center md:items-start space-y-8">
-            <h1 class="text-lg font-bold md:text-4xl">01 PICK YOUR DESTINATION</h1>              
-            <img :src="imageUrl" alt="" class="animate w-11/12">
+            <h1 class="text-lg font-bold md:text-4xl">01 PICK YOUR DESTINATION</h1>             
+            <img :src="imageUrl" alt="" class="animate w-10/12">          
           </div>          
           <div class="mt-8 md:w-2/4">
              <div class="flex justify-center md:justify-normal space-x-3">
@@ -60,7 +60,7 @@ onMounted(updateDestination)
             </div>
             <div class="flex flex-col items-center md:items-start mt-8 space-y-4">
           <h2 class="text-6xl uppercase">{{ currentDestination.name }}</h2>
-          <p class="text-sm md:text-lg text-center md:text-left">{{ currentDestination.description }}</p>          
+          <p class="text-sm md:text-lg text-center md:text-left">{{currentDestination.description}}</p>          
           <div class="space-y-8 text-center md:text-left md:flex md:items-center md:space-y-0 md:gap-x-8 lg:gap-x-20">
             <div>
               <p class="text-2xl md:text-lg lg:text-2xl font-medium uppercase text-slate-500">Avg. Distance</p>
@@ -87,6 +87,17 @@ onMounted(updateDestination)
   }
   to{
     transform: rotate(360deg);    
+  }
+}
+.ani{
+  animation: pulse 0.7s ease-in;
+}
+@keyframes pulse {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
 @media screen and (max-width: 767px) {

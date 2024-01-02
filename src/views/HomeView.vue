@@ -4,7 +4,7 @@
 <template>
     <body class="min-h-screen scroll-smooth text-slate-300 font-mono pb-4">
     <Nav/>
-    <div class="flex flex-col md:flex-row md:text-left justify-evenly items-center text-center mt-5 md:mt-20 space-y-10 md:space-y-0">
+    <div class="flex flex-col md:flex-row md:text-left justify-evenly items-center text-center mt-5 md:mt-20 space-y-10 md:space-y-0 ani">
     <div class="p-4 md:p-0 md:w-2/5">
         <h1 class="text-xl md:text-3xl">
             SO, YOU WANT TO TRAVLE TO <span class="text-8xl text-white font-bold md:block">SPACE</span> 
@@ -36,6 +36,17 @@
     }
     100%{
       opacity: .5;
+    }
+  }
+  .ani{
+    animation: pulse 0.7s ease-in;
+  }
+  @keyframes pulse {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
     }
   }
     @media screen and (max-width: 767px) {
