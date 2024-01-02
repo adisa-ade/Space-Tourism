@@ -13,15 +13,30 @@
             Well sit back, and relax because we'll give you a truly out of this world experience
         </p>      
     </div>
-    <div class="w-72 h-72 bg-white rounded-full flex justify-center items-center animate-pulse explore">
-        <h1 class="text-5xl text-black">EXPLORE</h1>
+    <div class="w-72 h-72 bg-white rounded-full flex justify-center items-center explore">
+        <h1 class="text-5xl text-slate-500">EXPLORE</h1>
     </div>
-    </div>
+    </div>    
     </body>
 </template>
 <style scoped>
   .explore{
-    box-shadow: 2px 2px 30px 20px rgb(198, 199, 184);           
+    box-shadow: 2px 2px 30px 20px rgb(198, 199, 184);
+    animation: pulse 15s infinite linear;           
+  }
+  @keyframes pulse {
+    0%{
+      opacity: .5;
+    }
+    50%{
+      opacity: .2;
+    }
+    75%{
+      opacity: 1;
+    }
+    100%{
+      opacity: .5;
+    }
   }
     @media screen and (max-width: 767px) {
   body{

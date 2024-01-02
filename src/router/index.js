@@ -11,12 +11,12 @@ const router = createRouter({
         component:HomeViewVue
     },
     {
-        path:'/destination',    
+        path:'/destination/:name',    
         name: 'destination',
         component: Destination
     },
     {
-        path:'/crew',    
+        path:'/crew/',    
         name: 'crew',
         component: Crew
     },
