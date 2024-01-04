@@ -4,12 +4,12 @@
 <template>
     <body class="min-h-screen scroll-smooth text-slate-300 font-mono pb-4">
     <Nav/>
-    <div class="flex flex-col md:flex-row md:text-left justify-evenly items-center text-center mt-5 md:mt-20 space-y-10 md:space-y-0 ani">
-    <div class="p-4 md:p-0 md:w-2/5">
+    <div class="flex flex-col lg:flex-row lg:text-left justify-evenly items-center text-center mt-5 lg:mt-20 space-y-10 md:space-y-40  lg:space-y-0 ani">
+    <div class="p-4 md:p-5 lg:p-0 lg:w-2/5 md:space-y-10 lg:space-y-0">
         <h1 class="text-xl md:text-3xl">
             SO, YOU WANT TO TRAVLE TO <span class="text-8xl text-white font-bold md:block">SPACE</span> 
         </h1>
-        <p class="leading-8 font-serif md:leading-10 md:text-xl">Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it.
+        <p class="leading-8 font-serif md:leading-10 md:text-2xl lg:text-xl">Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we'll give you a truly out of this world experience
         </p>      
     </div>
