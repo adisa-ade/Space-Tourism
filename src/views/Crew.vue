@@ -27,7 +27,9 @@ const imageUrl = ref(DouglasHurleyImg)
 
 const updateImage = () => {
   const urlParts = route.path.split('/')  
+  console.log(urlParts)
   const lastPart = urlParts.slice(-1).toString()  
+  console.log(lastPart)
   imageUrl.value = imageMap[lastPart]
 }
 

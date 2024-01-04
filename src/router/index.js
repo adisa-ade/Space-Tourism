@@ -21,7 +21,7 @@ const router = createRouter({
         component: Crew,        
     },
     {
-        path:'/technology',    
+        path:'/technology/:name',    
         name: 'technology',
         component: Technology
     },
